@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/venv,vim,python
+# Edit at https://www.toptal.com/developers/gitignore?templates=venv,vim,python
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -170,23 +170,40 @@ poetry.toml
 # ruff
 .ruff_cache/
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+# LSP config files
+pyrightconfig.json
 
-# Local History for Visual Studio Code
-.history/
+### venv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+pip-selfcheck.json
 
-# Built Visual Studio Code Extensions
-*.vsix
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-.ionide
+# Session
+Session.vim
+Sessionx.vim
 
-# End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
+# End of https://www.toptal.com/developers/gitignore/api/venv,vim,python
